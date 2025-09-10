@@ -45,7 +45,7 @@ return (
   <div>
       <Header />
       <h2 className='text-blue-700 text-center font-bold text-4xl sm:text-5xl mt-10'>
-          Driver’s Daily Log Book
+          Driver's Daily Log Book
       </h2>
 
       <div className='flex flex-col bg-blue-700 mt-10 mx-auto w-full max-w-4xl rounded-xl p-8'>
@@ -54,17 +54,20 @@ return (
           <div className='flex flex-col'>
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Driver Name:</span>
-              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="text" name="name" value={driverInfo.name} onChange={handleDriverInfoChange} />
+              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="text" name="name" value={driverInfo.name} 
+              onChange={handleDriverInfoChange} />
               </label>
 
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Date:</span>
-              <input className='bg-white text-black p-2 m-1 rounded-lg w-full' type="date" name="date" value={driverInfo.date} onChange={handleDriverInfoChange} />
+              <input className='bg-white text-black p-2 m-1 rounded-lg w-full' type="date" name="date" value={driverInfo.date} 
+              onChange={handleDriverInfoChange} />
               </label>
 
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Truck Number:</span>
-              <input className='bg-white text-black p-2 m-1 rounded-lg w-full' type="text" name="truckNumber" value={driverInfo.truckNumber} onChange={handleDriverInfoChange} />
+              <input className='bg-white text-black p-2 m-1 rounded-lg w-full' type="text" name="truckNumber" value={driverInfo.truckNumber} 
+              onChange={handleDriverInfoChange} />
               </label>
           </div>
 
@@ -72,17 +75,20 @@ return (
           <div className='flex flex-col'>
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Trailer Number:</span>
-              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="text" name="trailerNumber" value={driverInfo.trailerNumber} onChange={handleDriverInfoChange} />
+              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="text" name="trailerNumber" value={driverInfo.trailerNumber} 
+              onChange={handleDriverInfoChange} />
               </label>
 
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Odometer Start:</span>
-              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="number" name="odometerStart" value={driverInfo.odometerStart} onChange={handleDriverInfoChange} />
+              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="number" name="odometerStart" value={driverInfo.odometerStart}
+               onChange={handleDriverInfoChange} />
               </label>
 
               <label className='m-2 py-2 px-3 flex flex-col sm:flex-row sm:items-center'>
               <span className='sm:w-40 font-semibold text-white'>Odometer End:</span>
-              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="number" name="odometerEnd" value={driverInfo.odometerEnd} onChange={handleDriverInfoChange} />
+              <input className='bg-white p-2 m-1 rounded-lg w-full text-black' type="number" name="odometerEnd" value={driverInfo.odometerEnd} 
+              onChange={handleDriverInfoChange} />
               </label>
           </div>
           </div>

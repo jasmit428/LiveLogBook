@@ -1,12 +1,11 @@
 "use client"
 
-import Header from "../components/header"
-import { useState} from "react";
+import Header from "../components/header";
+import { useState } from "react";
 import Link from "next/link";
-import { auth } from "../_utils/firebase"
-import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { useAuthState } from 'react-firebase-hooks/auth';
-
+import { auth } from "../_utils/firebase";
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 
 // handles admin logins
@@ -14,6 +13,7 @@ export default function AdminLogin() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [user, loading, error] = useAuthState(auth);
+
     // login with email and password
     const login = () => {
         signInWithEmailAndPassword(auth, email, password).catch((err)=> {
